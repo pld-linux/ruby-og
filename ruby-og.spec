@@ -14,7 +14,7 @@ Source0:	http://rubyforge.org/download.php/3811/%{tarname}-%{version}.tgz
 uRL:		http://rubyforge.org/projects/nitro/
 BuildRequires:	ruby
 Requires:	ruby
-Requires: ruby-Glue
+Requires:	ruby-Glue
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
