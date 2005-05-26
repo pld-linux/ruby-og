@@ -4,7 +4,7 @@
 Summary:	Object-Relational mapping library for Ruby
 Summary(pl):	Biblioteka odwzorowañ obiektowo-relacyjnych dla jêzyka Ruby
 Name:		ruby-Og
-%define tarname og
+%define	tarname	og
 Version:	0.17.0
 Release:	1
 License:	Ruby-alike
@@ -15,7 +15,7 @@ uRL:		http://rubyforge.org/projects/nitro/
 BuildRequires:	ruby
 Requires:	ruby
 Requires:	ruby-Glue
-Requires: ruby-facets
+Requires:	ruby-facets
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
