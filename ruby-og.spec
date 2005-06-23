@@ -11,7 +11,8 @@ License:	Ruby-alike
 Group:		Development/Languages
 Source0:	http://rubyforge.org/download.php/4926/%{tarname}-%{version}.tgz
 # Source0-md5:	8c9ffb6ed75d9c4bd0ca4d985eba32c3
-uRL:		http://rubyforge.org/projects/nitro/
+Patch0:	%{name}-errordetail.patch
+URL:		http://rubyforge.org/projects/nitro/
 BuildRequires:	ruby
 Requires:	ruby
 Requires:	ruby-Glue
@@ -29,6 +30,7 @@ Ten pakiet zawiera bibliotekê odwzorowañ obiektowo relacyjnych Og
 
 %prep
 %setup -q -n %{tarname}-%{version}
+%patch0 -p1
 
 %build
 rdoc --ri --op ri lib
