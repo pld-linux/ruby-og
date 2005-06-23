@@ -1,0 +1,14 @@
+diff -ur og-0.19.0-o/lib/og/errors.rb og-0.19.0/lib/og/errors.rb
+--- og-0.19.0-o/lib/og/errors.rb	2005-04-21 05:37:45.000000000 -0600
++++ og-0.19.0/lib/og/errors.rb	2005-06-23 00:49:31.000000000 -0600
+@@ -11,6 +11,10 @@
+ 	def initialize(original_exception, info = nil)
+ 		@original_exception, @info = original_exception, info
+ 	end
++
++	def message
++		super + '(' + info + ')'
++	end
+ end
+ 
+ end
