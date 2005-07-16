@@ -15,7 +15,7 @@ Patch0:	%{name}-errordetail.patch
 URL:		http://rubyforge.org/projects/nitro/
 BuildRequires:	ruby
 Requires:	ruby
-Requires:	ruby-Glue
+Requires:	ruby-Glue >= %{version}
 Requires:	ruby-facets
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
