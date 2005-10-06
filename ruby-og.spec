@@ -17,6 +17,7 @@ BuildRequires:	ruby
 Requires:	ruby
 Requires:	ruby-Glue >= %{version}
 Requires:	ruby-mega
+Requires:	ruby-nano
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
