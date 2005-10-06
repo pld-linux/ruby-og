@@ -16,7 +16,7 @@ URL:		http://rubyforge.org/projects/nitro/
 BuildRequires:	ruby
 Requires:	ruby
 Requires:	ruby-Glue >= %{version}
-Requires:	ruby-facets
+Requires:	ruby-mega
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
