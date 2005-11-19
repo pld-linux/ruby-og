@@ -1,18 +1,16 @@
-%define	ruby_rubylibdir	%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
-%define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"])')
-%define	ruby_version	%(ruby -r rbconfig -e 'print Config::CONFIG["ruby_version"]')
+%define	tarname	og
 Summary:	Object-Relational mapping library for Ruby
 Summary(pl):	Biblioteka odwzorowañ obiektowo-relacyjnych dla jêzyka Ruby
 Name:		ruby-Og
-%define	tarname	og
 Version:	0.25.0
 Release:	1
 License:	Ruby-alike
 Group:		Development/Languages
 Source0:	http://rubyforge.org/download.php/7161/%{tarname}-%{version}.tgz
 # Source0-md5:	d46c2c06f49c8f83bd84072890f7c273
-Patch0:	%{name}-errordetail.patch
+Patch0:		%{name}-errordetail.patch
 URL:		http://rubyforge.org/projects/nitro/
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 Requires:	ruby
 Requires:	ruby-Glue >= %{version}
@@ -29,7 +27,6 @@ Ten pakiet zawiera bibliotekê odwzorowañ obiektowo relacyjnych Og
 ("Object Graph") dla jêzyka Ruby.
 
 %prep
-#%setup -q -n %{tarname}-%{version}
 %setup -q -n %{tarname}
 %patch0 -p1
 
