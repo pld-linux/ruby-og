@@ -2,19 +2,19 @@
 Summary:	Object-Relational mapping library for Ruby
 Summary(pl):	Biblioteka odwzorowañ obiektowo-relacyjnych dla jêzyka Ruby
 Name:		ruby-Og
-Version:	0.25.0
-Release:	2
+Version:	0.27.0
+Release:	1
 License:	Ruby-alike
 Group:		Development/Languages
-Source0:	http://rubyforge.org/download.php/7161/%{tarname}-%{version}.tgz
-# Source0-md5:	d46c2c06f49c8f83bd84072890f7c273
+Source0:	http://rubyforge.org/download.php/8087/%{tarname}-%{version}.tgz
+# Source0-md5:	53949ab14ffa73b2b7cbfa65f091b6a3
 Patch0:		%{name}-errordetail.patch
 URL:		http://rubyforge.org/projects/nitro/
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
 %{?ruby_mod_ver_requires_eq}
 Requires:	ruby-Glue >= %{version}
-Requires:	ruby-facets >= 2005.10.30
+Requires:	ruby-facets >= 1.0.0
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,7 +27,7 @@ Ten pakiet zawiera bibliotekê odwzorowañ obiektowo relacyjnych Og
 ("Object Graph") dla jêzyka Ruby.
 
 %prep
-%setup -q -n %{tarname}
+%setup -q -n %{tarname}-%{version}
 %patch0 -p1
 
 %build
