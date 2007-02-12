@@ -1,6 +1,6 @@
 %define	tarname	og
 Summary:	Object-Relational mapping library for Ruby
-Summary(pl.UTF-8):   Biblioteka odwzorowań obiektowo-relacyjnych dla języka Ruby
+Summary(pl.UTF-8):	Biblioteka odwzorowań obiektowo-relacyjnych dla języka Ruby
 Name:		ruby-Og
 Version:	0.27.0
 Release:	1
