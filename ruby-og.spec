@@ -1,6 +1,6 @@
 %define	tarname	og
 Summary:	Object-Relational mapping library for Ruby
-Summary(pl):	Biblioteka odwzorowañ obiektowo-relacyjnych dla jêzyka Ruby
+Summary(pl.UTF-8):   Biblioteka odwzorowaÅ„ obiektowo-relacyjnych dla jÄ™zyka Ruby
 Name:		ruby-Og
 Version:	0.27.0
 Release:	1
@@ -22,9 +22,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package contains the Og "Object Graph" Object-Relational mapping
 library for Ruby.
 
-%description -l pl
-Ten pakiet zawiera bibliotekê odwzorowañ obiektowo relacyjnych Og
-("Object Graph") dla jêzyka Ruby.
+%description -l pl.UTF-8
+Ten pakiet zawiera bibliotekÄ™ odwzorowaÅ„ obiektowo relacyjnych Og
+("Object Graph") dla jÄ™zyka Ruby.
 
 %prep
 %setup -q -n %{tarname}-%{version}
