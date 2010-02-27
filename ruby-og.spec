@@ -16,6 +16,7 @@ BuildRequires:	ruby-modules
 Requires:	ruby-glue >= %{version}
 Requires:	ruby-facets >= 1.0.0
 Obsoletes:	ruby-Og
+Provides:	ruby-Og
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
