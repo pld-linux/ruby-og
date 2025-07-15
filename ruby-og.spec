@@ -30,7 +30,7 @@ Ten pakiet zawiera bibliotekę odwzorowań obiektowo relacyjnych Og
 
 %prep
 %setup -q -n %{pkgname}-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 rdoc --ri --op ri lib
